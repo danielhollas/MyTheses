@@ -1,0 +1,154 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+\documentclass[a4paper, 12pt]{article}
+
+\usepackage{ifxetex}
+
+%\ifxetex
+\usepackage{fontspec}
+\usepackage{xltxtra}
+\usepackage[czech]{babel}
+%\else
+%  \usepackage[cp1250]{inputenc}
+%  \usepackage[czech]{babel}
+%\fi
+
+\usepackage{bakalarska_prace}
+
+\begin{document}
+
+%
+% souhrn
+%
+\section*{SOUHRN}
+
+Souhrn v ČJ
+
+\section*{SUMMARY}
+Souhrn v AJ
+
+%
+% podekovani
+%
+\newpage
+\section*{PODĚKOVÁNÍ}
+případné poděkování. Pokud není, stranu vynechat.
+
+
+\tableofcontents
+\newpage
+
+\section{ÚVOD}
+Úvod. Internet a výuka. Načrtnutí osnovy bakalářské práce.1str.
+
+\newpage
+\section{LITERÁRNÍ ČÁST}
+
+\subsection{Počátky vzdělávání přes Internet}
+MITOpenCourseWare, fenomén MOOC ( Coursera, Udacity, EdX)
+Současný stav použítí Internetu v terciárnním vzdělávání.
+
+\subsection{Khan Academy}
+
+Poznámky: nezisková organizace, 80 zaměstnanců
+
+Free World Class Education for anyone anywhere
+
+15 miliónů studentů měsíčně, 150000 cvičení, přes 6000 videí
+
+KA, collaboration with college board for new SAT, KA as official preparation
+
+Možnost zapojit rodiče ...mohou se učit společně s dítětem
+
+Big data, gamification, credentialing
+
+\subsection{Khanova škola}
+Historie, načrtnutí současného stavu a plány do budoucna, mový web, překladatelské maratony
+
+Příklady použití --- citovat PORG
+
+\subsubsection{Internet v českých školách}
+Statistiky o dostupnosti Internetu a IT na českých školách.
+
+
+\subsection{Kombinovaná výuka}
+Jakým způsobem se dá Internet zařadit do výuky?
+Flipped classroom - analogie s humantiními obory - čtení knihy doma a diskuse ve škole
+
+Další modely kombinované výuky (station rotation, flex, atp.), Zmínit Microsoft studii.
+
+\newpage
+
+\section{Praktická část}
+
+\subsection{Struktura nového webu Khanovy školy}
+Definice a popis pojmů: předmět, schéma, blok, video-cvičení
+
+\subsection{Tvorba titulků}
+Popis technických záležitostí (Amara, Report), o titulcích obecně
+
+Stylistická pravidla tvorby titulků buď sem nebo do Přílohy, do přílohy mohou přijít další technické detaily
+
+\subsection{Tvorba cvičení}
+Krátký popis editoru na cvičení
+
+\subsection{Pořádání překladatelských maratonů}
+Přesnější popis a statistiky z maratonů, zvláště pak těch na VŠCHT.
+
+\subsection{Dotazníky na Masarykově střední škole}
+Účel dotazníků, kolik lidí (bohužel jen jedna třída). Porovnávání dvou videí.
+
+
+\newpage
+\section{VÝSLEDKY A DISKUSE}
+
+\subsection{Struktura předmětu chemie na Khanově škole}
+Popis schémat Obecná chemie, Fyzikální chemie, Organická chemie (Biochemie a Analytická chemie comming soon).
+Vysvětlit, čím se liší od struktury na Khan Academy.
+
+\subsection{Videa o vyčíslování chemických rovnic}
+Vyčíslování chemických rovnic je jedna z prvních věcí, na kterou narazí student chemie. I když se na první pohled může zdát, že jde o pouhou formalitu, bez řádně vyčíslené rovnice nejde provést mnoho základních chemických výpočtů (např. výtěžek reakce). Je to také jedna z věci, se kterou může mnoho žáků bojovat. Tento fakt dobře dokládají statistiky z Khanovy školy. Video o vyčíslování bylo za období XX do XX druhé nejsledovanější na celé Khanově škole, s celkovým počtem XX shlédnutí. I proto jsem si tuto problematiku vybral jako případovou studii. 
+
+Vyčíslování chemických rovnic je také tak trochu oříšek z hlediska didaktického. Jak bychom vlastně měli vyčíslování učit?
+V principu je možné vyčíslování převést na matematickou úlohu řešení $x$ rovnic o $n$ neznámých, kde $x$ je počet prvků v rovnici a $n$ je počet stechiometrických koeficientů.\cite{marecek} Ve většině případů má tato soustava jediné řešení, i když v některých speciálních případech je řešení nejednoznačné a ke správnému vyčíslení je třeba znát mechanismus reakce. Jasné matematické zádání je jednoduché algoritmizovat, existuje například stránka, která po zadání libovolné rovnice tuto rovnici vyčíslí.\cite{}
+
+Tento přístup k problému ovšem z didaktického pohledu není optimální, a to hned z několika důvodů.
+Především tento přístup nemusí odpovídat matematickým znalostem mnoha žáků. Většina z nich bojuje s výpočtem dvou neznámých ze dvou rovnic, typická chemická rovnice ale vede ke větší soustavě (i když je většinou triviálně řešitelná). 
+Pro typickou rovnici je navíc tento postup zbytečně složitý, často řešení tak nějak \uv{vidíme}, bez toho, abychom museli explicitně psát matematické rovnice. 
+
+Z těchto důvodů se vyčíslování chemických rovnic řeší intuitivně (i Sal Khan ve svých videích hovoří o \uv{art of balancing chemical equations}) a je velmi těžké vytvořit jednoduchý a jasný postup, což uvádí učitele do nepříjemné situace a v konečném důsledku to vede k tomu, že se to žák musí naučit trpělivým procvičováním. 
+
+Cílem této části je tedy poskytnout žákům nástroj, který jim s tímto úkolem pomůže. Mou práci lze rozdělit na dvě etapy. Jednak jsem přeložil dostupná videa o vyčíslování chemických rovnic na Khan Academy. Druhou částí je vytvoření cvičení na Khanově škole, které je inspirováno obdobným cvičením na Khan Academy. Toto cvičení jednak poskytuje žákům velkou databázi rovnic, na které mohou snadno procvičovat svou dovednost, ale také jim pomocí systému inteligentních nápověd pomáhá pochopit a upevnit si znalosti, získané ve videích. 
+
+\subsection{Videa o vyčíslování chemických rovnic}
+Konkrétní popis jednotlivých videí (7 videí, celkem 50 minut)
+
+\subsection{Cvičení k vyčíslování chemických rovnic}
+Rozbor tvorby cvičení, jak fungují cvičení na KŠ (možná už v praktické části?).
+Diskuse různých typů chemických rovnic a jak k nim tvořit nápovědy.
+
+\newpage
+\section{ZÁVĚR}
+
+
+%%% Vytvoření seznamu literatury.
+\newpage
+\addcontentsline{toc}{section}{LITERATURA}
+
+\bibliography{papers,books} % pozor, nesmi byt mezera
+
+
+%%% Přílohy.
+\newpage
+
+\appendix
+
+\section{Příloha A - Tvorba titulků k výukovým videím}
+\label{Priloha:titulky}
+
+\section{Příloha B - Kompletní znění titulků k přeloženým videím.}
+
+\section{Příloha C - Použíté chemické rovnice.}
+
+
+\end{document}
