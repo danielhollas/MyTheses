@@ -13,7 +13,11 @@
 %  \usepackage[czech]{babel}
 %\fi
 
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
 \usepackage{bakalarska_prace}
+
 
 \begin{document}
 
@@ -101,6 +105,9 @@ Přesnější popis a statistiky z maratonů, zvláště pak těch na VŠCHT.
 
 \newpage
 \section{VÝSLEDKY A DISKUSE}
+Výsledková část bakalářské práce je je rozdělena na několik volně navazujících částí.
+Nejprve popíšu průběh a výsledky dvou překladatelských maratonů, které jsem s pomocí dalších členů Khanovy školy uspořádal na VCHT Praha. Následně popíšu strukturu předmětu chemie na novém webu Khanovy školy. 
+
 
 \subsection{Struktura předmětu chemie na Khanově škole}
 Popis schémat Obecná chemie, Fyzikální chemie, Organická chemie (Biochemie a Analytická chemie comming soon).
@@ -113,19 +120,81 @@ Vyčíslování chemických rovnic je také tak trochu oříšek z hlediska dida
 V principu je možné vyčíslování převést na matematickou úlohu řešení $x$ rovnic o $n$ neznámých, kde $x$ je počet prvků v rovnici a $n$ je počet stechiometrických koeficientů.\cite{marecek} Ve většině případů má tato soustava jediné řešení, i když v některých speciálních případech je řešení nejednoznačné a ke správnému vyčíslení je třeba znát mechanismus reakce. Jasné matematické zádání je jednoduché algoritmizovat, existuje například stránka, která po zadání libovolné rovnice tuto rovnici vyčíslí.\cite{}
 
 Tento přístup k problému ovšem z didaktického pohledu není optimální, a to hned z několika důvodů.
-Především tento přístup nemusí odpovídat matematickým znalostem mnoha žáků. Většina z nich bojuje s výpočtem dvou neznámých ze dvou rovnic, typická chemická rovnice ale vede ke větší soustavě (i když je většinou triviálně řešitelná). 
+Především tento přístup nemusí odpovídat matematickým znalostem mnoha žáků. Většina z nich bojuje s výpočtem dvou neznámých ze dvou rovnic, typická chemická rovnice ale vede ke větší soustavě (i když je většinou triviálně řešitelná).
 Pro typickou rovnici je navíc tento postup zbytečně složitý, často řešení tak nějak \uv{vidíme}, bez toho, abychom museli explicitně psát matematické rovnice. 
 
 Z těchto důvodů se vyčíslování chemických rovnic řeší intuitivně (i Sal Khan ve svých videích hovoří o \uv{art of balancing chemical equations}) a je velmi těžké vytvořit jednoduchý a jasný postup, což uvádí učitele do nepříjemné situace a v konečném důsledku to vede k tomu, že se to žák musí naučit trpělivým procvičováním. 
 
-Cílem této části je tedy poskytnout žákům nástroj, který jim s tímto úkolem pomůže. Mou práci lze rozdělit na dvě etapy. Jednak jsem přeložil dostupná videa o vyčíslování chemických rovnic na Khan Academy. Druhou částí je vytvoření cvičení na Khanově škole, které je inspirováno obdobným cvičením na Khan Academy. Toto cvičení jednak poskytuje žákům velkou databázi rovnic, na které mohou snadno procvičovat svou dovednost, ale také jim pomocí systému inteligentních nápověd pomáhá pochopit a upevnit si znalosti, získané ve videích. 
+Cílem této části je tedy poskytnout žákům nástroj, který jim s tímto úkolem pomůže. Mou práci lze rozdělit na dvě etapy. Jednak jsem přeložil dostupná videa o vyčíslování chemických rovnic na Khan Academy. Druhou částí bylo vytvoření cvičení na Khanově škole, které je inspirováno obdobným cvičením na Khan Academy. Toto cvičení jednak poskytuje žákům velkou databázi rovnic, na které mohou snadno procvičovat svou dovednost, ale také jim pomocí systému inteligentních nápověd pomáhá pochopit a upevnit si znalosti získané ve videích.
 
-\subsection{Videa o vyčíslování chemických rovnic}
-Konkrétní popis jednotlivých videí (7 videí, celkem 50 minut)
+V následujícím textu popíšu detailně obsah jednotlivých videí (7 videí, dohromady 50 minut) a jejich didaktický účel. V každém z videí je vyčíslena právě jedna chemická rovnice. Ve staré verzi videa o vyčíslování bylo řešeno několik rovnic naráz, video ale pak bylo příliš dlouhé (přes 15~minut). Videa o vyčíslování jsou v současné době na začátku bloku \uv{Chemické rovnice a vzorce}, který také obsahuje videa o stechiometrii a výpočtech empirických vzorců z chemického složení. Kompletní znění českých titulků najde čtenář v příloze \ref{app:cztitulky}. Titulky a videa v digitální podobě jsou také na přiloženém CD ve formátech MP4 a srt.
+
+\subsubsection{Video 1 --- Vyčíslování chemických rovnic}
+\textit{název videa:} Vyčíslování chemických rovnic
+
+\noindent
+\textit{Popisek videa:} Umění vyčíslování chemických rovnic. Jednoduchý příklad na začátek.
+
+\noindent
+\textit{délka videa}: 5:04 minut
+
+\noindent
+\textit{chemická rovnice}: \ce{4Al + 3 O2 <=> 2 Al2O3 }
+
+
+První video je úvodem do problematiky vyčíslování chemických rovnic. Na začátku je vysvětleno, proč vlastně musíme vyčíslovat chemické rovnice --- počet atomů daného prvku musí být stejný na obou stranách chemické rovnice. Pokud zanedbáme radioaktivní procesy, prvky se nemůžou měnit na jiné prvky. 
+
+Postup při vyčíslení je následující:
+\begin{center}
+\ce{Al + O2 <=> Al2O3 }
+
+\ce{2Al + O2 <=> Al2O3 }
+
+\ce{2Al + 1,5 O2 <=> Al2O3 }
+
+\ce{4Al + 3 O2 <=> 2 Al2O3 }
+\end{center}
+
+
+\subsubsection{Video 2 --- Vyčíslení složitější chemické rovnice}
+\begin{center}
+\ce{CH4(g) + O2(g) <=> CO2(g) + H2O(l)}
+\end{center}
+
+\subsubsection{Video 3 --- Vyčíslení další spalovací reakce}
+\begin{center}
+\ce{C2H6(g) + O2(g) <=> CO2(g) + H2O(l)}
+\end{center}
+
+
+\subsubsection{Video 4 --- Vizuální pochopení vyčíslování chemických rovnic}
+\begin{center}
+\ce{H2C=CH2(g) + O=O(g) <=> O=C=O(g) + H-O-H(l)}
+\end{center}
+
+
+\subsubsection{Video 5 --- Vyčíslování chemických rovnic substitucí}
+
+\begin{center}
+\ce{Fe2O3 + H2SO4 <=> Fe2(SO4)3 + H2O}
+\end{center}
+
+
+\subsubsection{Video 6 --- Vyčíslování redoxních reakcí v kyselém prostředí}
+\begin{center}
+\ce{6 Cl^{-} + 14 H+ + Cr2O7^2-{} <=> 3 Cl2 + 2 Cr^{3+} + 7 H2O}
+\end{center}
+
+\subsubsection{Video 7 --- Vyčíslování redoxních reakcí v zásaditém prostředí}
+\begin{center}
+\ce{3ClO^{-} + 2Cr(OH)4^- + 2OH^- <=> 3Cl^- + 5H2O + 2CrO4^{2-}}
+\end{center}
 
 \subsection{Cvičení k vyčíslování chemických rovnic}
 Rozbor tvorby cvičení, jak fungují cvičení na KŠ (možná už v praktické části?).
 Diskuse různých typů chemických rovnic a jak k nim tvořit nápovědy.
+
+\subsection{Výsledky dotazníku}
 
 \newpage
 \section{ZÁVĚR}
@@ -144,11 +213,12 @@ Diskuse různých typů chemických rovnic a jak k nim tvořit nápovědy.
 \appendix
 
 \section{Příloha A - Tvorba titulků k výukovým videím}
-\label{Priloha:titulky}
+\label{app:tvorba_titulku}
 
 \section{Příloha B - Kompletní znění titulků k přeloženým videím.}
+\label{app:cztitulky}
 
-\section{Příloha C - Použíté chemické rovnice.}
-
+\section{Příloha C - Použité chemické rovnice.}
+\label{app:chemrov}
 
 \end{document}
