@@ -4,20 +4,20 @@
 
 \usepackage{ifxetex}
 
-%\ifxetex
-\usepackage{fontspec}
-\usepackage{xltxtra}
-\usepackage[czech]{babel}
-%\else
-%  \usepackage[cp1250]{inputenc}
-%  \usepackage[czech]{babel}
-%\fi
+\ifxetex
+  \usepackage{fontspec}
+  \usepackage{xltxtra}
+  \usepackage[czech]{babel}
+\else
+  \usepackage[utf8]{inputenc}
+  \usepackage[czech]{babel}
+  \usepackage[T1]{fontenc}
+\fi
 
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{bakalarska_prace}
-
 
 \begin{document}
 
@@ -114,7 +114,7 @@ Popis schémat Obecná chemie, Fyzikální chemie, Organická chemie (Biochemie 
 Vysvětlit, čím se liší od struktury na Khan Academy.
 
 \subsection{Videa o vyčíslování chemických rovnic}
-Vyčíslování chemických rovnic je jedna z prvních věcí, na kterou narazí student chemie. I když se na první pohled může zdát, že jde o pouhou formalitu, bez řádně vyčíslené rovnice nejde provést mnoho základních chemických výpočtů (např. výtěžek reakce). Je to také jedna z věci, se kterou může mnoho žáků bojovat. Tento fakt dobře dokládají statistiky z Khanovy školy. Video o vyčíslování bylo za období XX do XX druhé nejsledovanější na celé Khanově škole, s celkovým počtem XX shlédnutí. I proto jsem si tuto problematiku vybral jako případovou studii. 
+Vyčíslování chemických rovnic je jedna z prvních věcí, na kterou narazí student chemie. I když se na první pohled může zdát, že jde o pouhou formalitu, bez řádně vyčíslené rovnice nejde provést mnoho základních chemických výpočtů (např. výtěžek reakce). Je to také jedna z věci, se kterou může mnoho žáků bojovat. Tento fakt dobře dokládají statistiky z Khanovy školy. Video o vyčíslování bylo za období pěti měsíců od spuštění nového webu druhé nejsledovanější na celé Khanově škole s celkovým počtem přes 2000 zhlédnutí. I proto jsem si tuto problematiku vybral jako případovou studii. 
 
 Vyčíslování chemických rovnic je také tak trochu oříšek z hlediska didaktického. Jak bychom vlastně měli vyčíslování učit?
 V principu je možné vyčíslování převést na matematickou úlohu řešení $x$ rovnic o $n$ neznámých, kde $x$ je počet prvků v rovnici a $n$ je počet stechiometrických koeficientů.\cite{marecek} Ve většině případů má tato soustava jediné řešení, i když v některých speciálních případech je řešení nejednoznačné a ke správnému vyčíslení je třeba znát mechanismus reakce. Jasné matematické zádání je jednoduché algoritmizovat, existuje například stránka, která po zadání libovolné rovnice tuto rovnici vyčíslí.\cite{}
